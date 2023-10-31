@@ -1,0 +1,6 @@
+
+Bom dia a todos!
+
+Para o projeto das páginas de home, sobre, serviço e contato usando Bootstrap e CSS, você pode seguir as instruções do manual do Bootstrap (https://getbootstrap.com.br) e usar o código de exemplo que forneci anteriormente. Lembre-se de manter o código simples e focado no que foi ensinado em aulas anteriores. Após criar as páginas, compacte os arquivos em um arquivo ZIP e faça o upload para o Google Drive. Depois, compartilhe o link do Google Drive com sua turma no Google Classroom.
+https://classroom.google.com/c/NTg5NTE5ODI5ODEz/a/NTkwNTAxMjY1OTQ0/details
+Desejo a todos um ótimo trabalho! Se tiverem alguma dúvida, estou à disposição para ajudar.

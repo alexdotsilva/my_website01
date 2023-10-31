@@ -1,0 +1,80 @@
+/*comando para importar a fote Oxygen do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+
+body{
+    background-color: #3e3e3e;
+}
+header{
+    color: white;
+    float: auto;
+}
+main{
+    color: white;
+}
+footer{
+    color: white;
+    float: center;
+}
+h1{
+    border-bottom: #fed35c solid 5px;
+    font-family: 'Oswald', sans-serif;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+.home-text{
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+}
+p{
+    font-family: 'Oxygen', sans-serif;
+    /*esta é font family é a instrução das fonts do google para que o arquivo CSS reconheça*/
+}
+figure{
+    text-align: center;
+}
+.container{
+    padding-top: 30px;
+}
+.social{
+    border-top: 1px solid #fed35c;
+    text-align: center;
+    float: center;
+}
+.social-link{
+    color: white;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+}
+.address{
+    border-top: solid 1px #fed35c;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+   
+}
+.logo_main{
+    border: solid 5px #fed35c;
+    border-style: solid;
+    border-radius: 30px;
+    height: 180px;
+    width: 150px;
+}
+.form-group{
+    font-family: 'Oxygen' , sans-serif;
+}
+.nav,.nav-item,.nav-link, .accordion, .card, .card-header{
+    font-family: 'Oswald',sans-serif;
+    color: #fed35c;
+    border: none;
+    background-color: #3e3e3e;
+}
+.btn-link{
+    color: white;
+    text-align: center;
+}
