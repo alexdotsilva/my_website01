@@ -2,65 +2,154 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css\style.css">
     <title>Alex Silva</title>
     <link rel="icon" href="MEDIA\logo_tab.png">
 </head>
 <body>
     <header><!--Header da pagina-->
-    
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="empresa.html">A Empresa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
 
-        <div>
-            <figure>
-                <img class="logo_main" src="MEDIA\logo.png" alt="logo Alex Silva">
-            </figure>
-       
+      <div class="container-flex">  <!--container para toda a navbar no topo da página-->
+        <div class="row"> <!--div para indicar como linha-->
+          <div class="col"> <!--div para coluna numero 1 da linha-->
+            <div class="container-fluid float-start"> <!--container dentro da coluna para organização, float-start mantem a coluna no inicio-->
+              <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contato.html">Contato</a> <!--linha que define a pagina ativa e mostra com sublinhado-->
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col"> <!--divisão para coluna numenro 2 da linha-->
+            <div class="container-fluid"> <!--container-fluid se adapata a pagina-->
+              <div class="nav navbar justify-content-end"> 
+                <div class="nav">
+                  <figure style="padding-left: 1px;">
+                    <a href="https://www.instagram.com/lex_original_ish/" target="_blank">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
+                    </a>
+                  </figure>
+                </div>
+                <div class="nav">
+                  <figure style="padding-left: 5px;">
+                    <a href="https://github.com/alexdotsilva" target="_blank">
+                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
+                    </a>
+                  </figure>
+                </div>
+                <div class="nav">
+                  <figure style="padding-left: 5px;">
+                    <a href="https://www.linkedin.com/in/alexandresdasilva/" target="_blank">
+                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--container com o logo-->
+      <div class="container">
+        <figure>
+          <img class="logo_main" src="MEDIA\logo.png" alt="logo Alex Silva">
+        </figure>
+      </div>
+
     </header>
 
-        <main><!--parte principal da pagina-->
+<!--parte principal da pagina-->  
+        <main>
             <section>
-                <h1>CONTATO</h1>
+                  <h1>CONTATO</h1>
                     <h3>
-                        Entre em contato
+                        Entre em contato conosco
                     </h3>
-    
-                    <form> <!--form para nome e sobrenome-->
-                        <div class="row">
-                          <div class="col">
-                            <input type="text" class="form-control" placeholder="Nome">
-                          </div>
-                          <div class="col">
-                            <input type="text" class="form-control" placeholder="Sobrenome">
-                          </div>
-                        </div>
-                      </form>
 
-                      <form> <!--form para nome e sobrenome-->
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Endereço de email</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                    <div class="container-flex" style="margin-top: 10px; padding: 1rem 1rem;">
+                      <form class="needs-validation" novalidate>
+                        
+                        <div class="form-row">
+                          <div class="col-lg-6 mb-3">
+                            <label for="validationCustom01">Nome:</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value="" required>
+                            <div class="valid-feedback">
+                              Tudo certo!
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6 mb-3">
+                            <label for="validationCustom02">E-mail</label>
+                            <input type="email" class="form-control" id="validationCustom02" placeholder="e-mail" value="" required>
+                              <div class="valid-feedback">
+                                Tudo certo!
+                              </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">A sua mensagem</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        
+                        <div class="form-row">
+                          <div class="col-lg-6 mb-3">
+                              <label for="validationCustom03">Nome da Empresa</label>
+                              <input type="text" class="form-control" id="validationCustom03" placeholder="Nome da Empresa" value="" required>
+                              <div class="valid-feedback">
+                                Tudo certo!
+                              </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom04">Assunto</label>
+                              <input type="text" class="form-control" id="validationCustom04" placeholder="Assunto" value="" required>
+                              <div class="valid-feedback">
+                                Tudo certo!
+                              </div>
+                            </div>
                         </div>
+
+                            <label for="validationCustom05">Mensagem:</label>
+                            <textarea class="form-control" name="txtMensagem" id="validationCustom05" placeholder="Digite aqui sua mensagem" rows="4" required></textarea>
+                            <div class="valid-feedback">
+                              Tudo certo!
+                            </div>
+                          </div>
+                    
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Concordo com a validade das informações fornecidas
+                            </label>
+                            <div class="invalid-feedback">
+                              Você deve concordar antes de continuar.
+                            </div>
+                          </div>
+                        </div>
+                    
+                     <div class="text-center" style="padding-bottom: 1rem;">
+                        <button class="btn btn-warning w-25" type="submit">Enviar</button>
+                    </div>
+
                       </form>
+                    </div>
+
             </section>           
         </main>
-    <footer><!--footer da pagina-->
+      
+
+<!--footer da pagina-->
+    <footer>
         <section class="address">
             <address>
                 Nome da empresa S.A
@@ -72,42 +161,43 @@
                 Portugal - Mundo
             </address>
         </section>
-        <section class="social">
-            <h3> SOCIAL </h3>
-            <div class="container">
-              <div class="row">
-               
-              </div>
-              <div class="row">
-                <div class="col">
-                  <figure>
-                    <a href="https://www.instagram.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
-                  </a>
-                  </figure>
-                </div>
-                <div class="col">
-                  <figure>
-                    <a href="https://www.github.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
-                  </a>
-                  </figure>
-                </div>
-                <div class="col">
-                  <figure>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
-                  </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
-        </section>
+
+        
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script> // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+      (function() 
+      {
+        'use strict';
+        window.addEventListener('load', function()
+        { // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+          var forms = document.getElementsByClassName('needs-validation');
+          // Faz um loop neles e evita o envio
+          var validation = Array.prototype.filter.call(forms, function(form) 
+          {
+            form.addEventListener('submit', function(event)
+            {
+              if (form.checkValidity() === false)
+              {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 </body>
 </html>

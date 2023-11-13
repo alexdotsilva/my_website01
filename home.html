@@ -2,42 +2,83 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css\style.css">
     <title>Alex Silva</title>
     <link rel="icon" href="MEDIA\logo_tab.png">
 </head>
 <body>
     <header><!--Header da pagina-->
-    
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="empresa.html">A Empresa</a>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
 
-        <div>
-            <figure>
-                <img class="logo_main" src="MEDIA\logo.png" alt="logo Alex Silva">
-            </figure>
+      <div class="container-flex">  <!--container para toda a navbar no topo da página-->
+        <div class="row"> <!--div para indicar como linha-->
+          <div class="col"> <!--div para coluna numero 1 da linha-->
+            <div class="container-fluid float-start"> <!--container dentro da coluna para organização, float-start mantem a coluna no inicio-->
+              <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a> <!--linha que define a pagina ativa e mostra com sublinhado-->
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col"> <!--divisão para coluna numenro 2 da linha-->
+            <div class="container-fluid"> <!--container-fluid se adapata a pagina-->
+              <div class="nav navbar justify-content-end"> 
+                <div class="nav">
+                  <figure style="padding-left: 1px;">
+                    <a href="https://www.instagram.com/lex_original_ish/" target="_blank">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
+                    </a>
+                  </figure>
+                </div>
+                <div class="nav">
+                  <figure style="padding-left: 5px;">
+                    <a href="https://github.com/alexdotsilva" target="_blank">
+                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
+                    </a>
+                  </figure>
+                </div>
+                <div class="nav">
+                  <figure style="padding-left: 5px;">
+                    <a href="https://www.linkedin.com/in/alexandresdasilva/" target="_blank">
+                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <h1>HOME</h1>
-            <h3 class="home-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In at aliquam totam cupiditate ex, maiores corrupti doloremque perspiciatis esse debitis dolor rem, minus deserunt, laborum sequi quaerat sit et fugit.
-            </h3>
+        <!--container com o logo-->
+      <div class="container">
+        <figure>
+          <img class="logo_main" src="MEDIA\logo.png" alt="logo Alex Silva">
+        </figure>
+      </div>
+
     </header>
 
-        <main><!--parte principal da pagina-->
-            
-        </main>
-    <footer><!--footer da pagina-->
+      <main><!--parte principal da pagina-->
+        <h1>BEM-VINDO</h1>
+        <h3 class="home-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In at aliquam totam cupiditate ex, maiores corrupti doloremque perspiciatis esse debitis dolor rem, minus deserunt, laborum sequi quaerat sit et fugit.
+        </h3>   
+      </main>
+    
+      <footer><!--footer da pagina-->
       
        <section class="address">
             <address>
@@ -51,36 +92,6 @@
             </address>
         </section>
 
-        <section class="social">
-            <h3> SOCIAL </h3>
-            <div class="container">
-              <div class="row">
-               
-              </div>
-              <div class="row">
-                <div class="col">
-                  <figure>
-                    <a href="https://www.instagram.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
-                  </a>
-                  </figure>
-                </div>
-                <div class="col">
-                  <figure>
-                    <a href="https://www.github.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
-                  </a>
-                  </figure>
-                </div>
-                <div class="col">
-                  <figure>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
-                  </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
              
         </section>
     </footer>
