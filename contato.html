@@ -14,64 +14,56 @@
     <link rel="icon" href="MEDIA\logo_tab.png">
 </head>
 <body>
-    <header><!--Header da pagina-->
 
-      <div class="container-flex">  <!--container para toda a navbar no topo da página-->
-        <div class="row"> <!--div para indicar como linha-->
-          <div class="col"> <!--div para coluna numero 1 da linha-->
-            <div class="container-fluid float-start"> <!--container dentro da coluna para organização, float-start mantem a coluna no inicio-->
-              <ul class="nav nav-underline">
-                  <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a> 
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contato.html">Contato</a> <!--linha que define a pagina ativa e mostra com sublinhado-->
-                  </li>
-                </ul>
-            </div>
-          </div>
+  <header class="sticky-top"><!--Header da pagina-->
 
-          <div class="col"> <!--divisão para coluna numenro 2 da linha-->
-            <div class="container-fluid"> <!--container-fluid se adapata a pagina-->
-              <div class="nav navbar justify-content-end"> 
-                <div class="nav">
-                  <figure style="padding-left: 1px;">
-                    <a href="https://www.instagram.com/lex_original_ish/" target="_blank">
-                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
-                    </a>
-                  </figure>
-                </div>
-                <div class="nav">
-                  <figure style="padding-left: 5px;">
-                    <a href="https://github.com/alexdotsilva" target="_blank">
-                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
-                    </a>
-                  </figure>
-                </div>
-                <div class="nav">
-                  <figure style="padding-left: 5px;">
-                    <a href="https://www.linkedin.com/in/alexandresdasilva/" target="_blank">
-                      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
-                    </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-end">
+          <li class="nav-item" style="padding-top: 15px;">
+            <figure>
+              <a href="https://www.instagram.com/lex_original_ish/" target="_blank">
+              <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1400/1400845.png" alt="instagram logo">
+              </a>
+            </figure>
+          </li>
+          <li class="nav-item" style="padding-top: 15px;">
+            <figure>
+              <a href="https://github.com/alexdotsilva" target="_blank">
+                <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png" alt="github logo">
+              </a>
+            </figure>
+          </li>
+          <li class="nav-item" style="padding-top: 15px;">
+            <figure>
+              <a href="https://www.linkedin.com/in/alexandresdasilva/" target="_blank">
+                <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/1051/1051282.png" alt="linkedin logo">
+              </a>
+            </figure>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-<!--container com o logo-->
-      <div class="container">
-        <figure>
-          <img class="logo_main" src="MEDIA\logo.png" alt="logo Alex Silva">
-        </figure>
-      </div>
+  </header>
 
-    </header>
+  <div class="container-fluid">
+    <figure>
+      <img class="logo_other" src="MEDIA\logo.png" alt="logo Alex Silva">
+    </figure>
+  </div>  
 
 <!--parte principal da pagina-->  
         <main>

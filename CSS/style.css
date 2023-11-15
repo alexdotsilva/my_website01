@@ -8,6 +8,7 @@ body{
     background-color: #3e3e3e;
 }
 header{
+    background-color: #3e3e3e;
     color: white;
     float: auto;
     padding: 1rem 1rem 0 1rem;
@@ -28,6 +29,10 @@ h3{
     font-family: 'Oswald', sans-serif;
     padding-left: 1rem;
 }
+block{
+    border: white solid 10px;
+    background-color: white;
+}
 .home-text{
     padding: 10px 0px 30px 0px;
     text-align: center;
@@ -40,17 +45,8 @@ p{
 figure{
     text-align: center;
 }
-.container{
-    padding-top: 30px;
-}
-.social{
-    border-top: 1px solid #fed35c;
-    text-align: center;
-    float: center;
-}
-.social-link{
-    color: white;
-}
+
+
 .social-icon{
     height: 30px;
     width: 30px;
@@ -62,19 +58,30 @@ figure{
     text-align: center;
    
 }
-.logo_main{
+.logo_other{
     border: solid 5px #fed35c;
-    border-style: solid;
     border-radius: 30px;
     height: 180px;
     width: 150px;
 }
+.logo_main{
+    border: solid 10px #fed35c;
+    border-radius: 50px;
+}
+
 .form-group{
     font-family: 'Oxygen' , sans-serif;
 }
 
 /* controles de cor dos links na navbar e tamnaho das fontes */
-.nav,.nav-item,.nav-link, .accordion, .card, .card-header{
+.nav,.nav-item,.nav-link{
+    font-family: 'Oswald',sans-serif;
+    font-size: 1rem;
+    color: #fed35c;
+    border: none;
+    display: inline-block;
+}
+.accordion, .card, .card-header{
     font-family: 'Oswald',sans-serif;
     font-size: 1rem;
     color: #fed35c;
