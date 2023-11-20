@@ -6,6 +6,7 @@
 
 body{
     background-color: #3e3e3e;
+    font-family: 'Oswald',sans-serif;
 }
 header{
     background-color: #3e3e3e;
@@ -22,11 +23,9 @@ footer{
 }
 h1{
     border-bottom: #fed35c solid 5px;
-    font-family: 'Oswald', sans-serif;
     padding-left: 1rem;
 }
 h3{
-    font-family: 'Oswald', sans-serif;
     padding-left: 1rem;
 }
 block{
@@ -38,14 +37,11 @@ block{
     text-align: center;
 }
 p{
-    font-family: 'Oxygen', sans-serif;
-    /*esta é font family é a instrução das fonts do google para que o arquivo CSS reconheça*/
     padding: 1rem;
 }
 figure{
     text-align: center;
 }
-
 
 .social-icon{
     height: 30px;
@@ -54,35 +50,32 @@ figure{
 .address{
     border-top: solid 1px #fed35c;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     text-align: center;
    
 }
 .logo_other{
-    border: solid 5px #fed35c;
-    border-radius: 30px;
-    height: 180px;
-    width: 150px;
+    border: solid 3px #fed35c;
+    border-radius: 10px;
+    height: 10%;
+    width: 10%;
 }
 .logo_main{
-    border: solid 10px #fed35c;
-    border-radius: 50px;
+    border: solid 5px #fed35c;
+    border-radius: 2rem;
+    height: 50%;
+    width: 50%;
 }
 
-.form-group{
-    font-family: 'Oxygen' , sans-serif;
-}
 
 /* controles de cor dos links na navbar e tamnaho das fontes */
 .nav,.nav-item,.nav-link{
-    font-family: 'Oswald',sans-serif;
     font-size: 1rem;
     color: #fed35c;
     border: none;
     display: inline-block;
 }
 .accordion, .card, .card-header{
-    font-family: 'Oswald',sans-serif;
     font-size: 1rem;
     color: #fed35c;
     border: none;
